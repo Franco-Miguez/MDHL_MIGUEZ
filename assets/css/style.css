@@ -23,22 +23,21 @@ body {
 
 header {
     min-height: 30vh;
-    background-color: aqua;
 }
 
 main {
     min-height: 70vh;
-    background-color: aquamarine;
+    padding-top: 1rem;
 }
 
 /*** style header ***/
-header {
+header h2 {
     text-align: center;
 
 }
 
 header h1 {
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 nav {
@@ -66,4 +65,30 @@ nav a[href="#"] {
     margin: 0 auto;
     background-size: cover;
     background-position: 0 40%;
+}
+
+/* style main */
+
+.main-left{
+    display: inline-block;
+    width: 20%;
+}
+
+.main-right{
+    display: inline-block;
+    width: 70%;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+}
+
+.main-img{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
 }
