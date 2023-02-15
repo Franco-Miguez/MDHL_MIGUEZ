@@ -1,8 +1,16 @@
+/*
+colors
+important text: #f8e12e
+backgorund color: #211915
+backgorund color light: #3b2f29
+second background color: #5fa199
+*/
 /*** normalize ***/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*** value defaut ***/
@@ -31,40 +39,88 @@ main {
 }
 
 /*** style header ***/
+h1{
+    text-shadow: #211915 3px 3px;
+
+}
+
+.header-info{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    height: 150px;
+    -webkit-filter: drop-shadow(#211915 5px 5px 5px);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 header h2 {
     text-align: center;
-
+    background-color: #211915;
+    padding: 0.2rem;
 }
 
 header h1 {
     padding: 1rem;
 }
 
-nav {
-    position: absolute;
-    top: -10px;
-    right: 3rem;
-}
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    background-color: #4472c4;
-    border: 1px solid #000;
-    padding: 2px;
-}
-
-nav a[href="#"] {
-    background-color: #70ad47;
-}
 
 .banner-header {
-    background-image: url(./../images/design1_image1.jpg);
-    width: 95%;
-    height: 100px;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+        ), 
+        url(./../images/design1_image1.jpg) ;
+    width: 100%;
+    height: 150px;
     margin: 0 auto;
     background-size: cover;
     background-position: 0 40%;
+    color: #f8e12e;
+}
+
+/*** nav ***/
+
+nav{
+    background-color: #211915;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+nav ul a:hover{
+    background-color: #3b2f29;
+}
+
+nav ul a[href="#"]{
+    background-color: #3b2f29;
+    color: #f8e12e;
 }
 
 /* style main */
@@ -80,10 +136,6 @@ nav a[href="#"] {
     width: 70%;
 }
 
-.logo{
-    width: 100%;
-    height: auto;
-}
 
 .main-img{
     display: inline-block;
