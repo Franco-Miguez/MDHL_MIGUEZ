@@ -38,6 +38,13 @@ a{
     color: #fff;
 }
 
+p{
+    margin: 1rem 0;
+}
+
+.pl-3{
+    padding-left: 3rem;
+}
 
 /*** size section the page ***/
 body {
