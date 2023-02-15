@@ -13,13 +13,29 @@ second background color: #5fa199
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 /*** value defaut ***/
+body{
+    color: #fff;
+}
+
 img {
     height: 100px;
 }
 
-.content {
-    position: relative;
+dt, .list-header{
+    font-weight: bold;
+    color: #5fa199;
+}
+
+
+.list-letter{
+    list-style-type: lower-alpha
+}
+
+a{
+    color: #fff;
 }
 
 
@@ -125,21 +141,64 @@ nav ul a[href="#"]{
 
 /* style main */
 
-.main-left{
-    display: inline-block;
-    width: 20%;
-    vertical-align: top;
+main{
+    background-color: #3b2f29;
 }
 
-.main-right{
-    display: inline-block;
-    width: 70%;
+.main-content{
+    background-color: #211915;
+    width: 90%;
+    border-radius: 3rem;
+    padding: 2rem;
+    margin: auto;
 }
-
 
 .main-img{
     display: inline-block;
-    width: 60%;
+    width: 40%;
     height: auto;
-    margin: 0 20%;
+    margin: 0 30%;
+    border-radius: 2rem;
+    border: #3b2f29 3px solid;
+    margin-bottom: 3rem;
+}
+
+article{
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    border-bottom: #3b2f29 3px dashed;
+}
+
+article h3{
+    padding-bottom: 1rem;
+    color: #f8e12e;
+    text-align: center;
+}
+
+/*** table ***/
+table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+
+table td, table th{
+    border: #3b2f29 solid 2px;
+    padding: 0.2rem;
+}
+
+table tr:nth-child(even){
+    background-color: #3b2f29;
+}
+
+table tr:nth-child(odd){
+    background-color: #211915;
+}
+
+table th{
+    background-color: #5fa199; /*#3b2f29;*/
+    color: #f8e12e;
+    text-shadow: #211915 2px 2px 2px;
 }
