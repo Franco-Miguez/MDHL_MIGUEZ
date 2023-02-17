@@ -209,3 +209,27 @@ table th{
     color: #f8e12e;
     text-shadow: #211915 2px 2px 2px;
 }
+
+/*** Form ***/
+fieldset{
+    padding: 1rem;
+    color: #f8e12e;
+}
+
+fieldset fieldset{
+    border: none;
+}
+
+fieldset p{
+    color: #fff;
+}
+
+input[type="submit"]{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+
+legend{
+    color: #5fa199;
+}
